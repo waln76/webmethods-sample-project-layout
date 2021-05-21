@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="wmTestSuite.xml">
+    <webMethodsTestCase name="PositiveCase01">
+        <service folder="SimpleMath" name="devideInt">
+            <input>
+                <file filename="resources/test/data/inputPositiveCase01.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/outputPositiveCase01.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="NegativeCase01">
+        <service folder="SimpleMath" name="devideInt">
+            <input>
+                <file filename="resources/test/data/inputNegativeCase01.xml"/>
+            </input>
+            <expected>
+                <exception/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
